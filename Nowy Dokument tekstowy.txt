@@ -1,6 +1,0 @@
-<p>Pools-Idea to mała ale prężnie rozwijająca się firma wykończeniowo budowlana. Wymiar pracy, czas oraz koszt ustalamy przed rozpoczęciem prac. Dbamy o naszych klientó i staramy się zawsze zrobić wszystko według ich wizji.</p>
-                <h1>Świadczymy takie usługi jak:</h1>
-                <h2>-Malowanie ścian</h2>
-                <h2>-Układanie paneli</h2>
-                <h2>-Naprawa dziur</h2>
-                <h2>-Naprawy elektryczne</h2>
