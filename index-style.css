@@ -1,0 +1,952 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Diplomata+SC&family=La+Belle+Aurore&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body
+{
+    background-color: #eff3fb;
+}
+header
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+header.scrolled
+{
+    background-color: white;
+}
+
+.logo
+{
+    font-size: 30px;
+    color: white;
+    width: 70%;
+    transition: color 0.4s ease-in-out;
+}
+header.scrolled .logo
+{
+    color: black;
+}
+
+.nav
+{
+    display: flex;
+}
+.nav a
+{
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+header.scrolled .nav a
+{
+    color: black;
+}
+.nav a:hover
+{
+    border-bottom: 2px solid rgb(196, 196, 196);
+}
+
+
+
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+}
+.bar 
+{
+    display: block;
+    width: 35px;
+    height: 4px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 25px;
+}
+header.scrolled .bar
+{
+    background-color: black;
+}
+
+
+
+
+
+
+.home
+{
+    height: 70vh;
+    width: 100%;
+    background: url(tlo33.jpg) ;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
+}
+.hometext
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hometext h1
+{
+    padding-top: 200px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    color: white;
+    font-size: 70px;
+}
+.hometext p
+{
+    color: rgb(196, 196, 196);
+    font-size: 25px;
+}
+.home1bt
+{
+    position: relative;
+    width: 350px;
+    height: 60px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    background-color: #0e6edc;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 6vh;
+}
+.home1bt:hover
+{
+    background-color: #0756b1;
+}
+
+
+
+
+
+
+.home2
+{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #eff3fb;
+    background-size: cover;
+    color: white;
+}
+.home2 h2
+{
+    width: 100%;
+    padding-top: 40px;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+}
+.home2img
+{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}
+.home2img p 
+{
+    font-size: 25px;
+}
+.material-symbols-outlined {
+    font-size: 100px;
+    color: #0e6edc;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 500,
+  'opsz' 48
+}
+.services1
+{
+    position: relative;
+    padding: 100px;
+    padding-top: 40px;
+}
+
+
+
+.home3
+{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #eff3fb;
+}
+.home3content
+{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home3 h2
+{
+    width: 100%;
+    padding-top: 40px;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 100;
+}
+.home3img
+{
+    position: relative;
+    width: 600px;
+    height: auto;
+    background: url(tlo21.jpg) no-repeat center;
+    background-size: cover;
+    margin-right: 50px;
+
+}
+.home3text
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-left: 50px;
+    color: black;
+}
+.home3text a
+{
+    font-size: 25px;
+    color: #0e6edc;
+}
+.home3text p 
+{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+
+
+
+.home4
+{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-color: #eff3fb;
+    margin-top: 200px;
+}
+.offer
+{
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.offer h2  
+{
+    width: 100%;
+    padding-top: 40px;
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+}
+.wybor
+{
+    position: relative;
+    width: 75%;
+    height: 30vh;
+    background-color: #eff3fb;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.wybor1, .wybor2, .wybor3
+{
+    position: relative;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.wybor1 a, .wybor2 a, .wybor3 a 
+{
+    font-size: 20px;
+}
+
+.opcja1
+{
+    position: relative;
+    width: 75%;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.iconatlo
+{
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+    margin-top: -10vh;
+    rotate: 45deg;
+    margin-left: 20vh;
+    opacity: 10%;
+}
+#iconatlo
+{
+    font-size: 1000px;
+}
+.inf1
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+}
+.inf1 p
+{
+    font-size: 20px;
+}
+.inf1 a 
+{
+    color: rgb(196, 196, 196);
+}
+#chuj
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.opcja2
+{
+    position: relative;
+    width: 75%;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    display: none;
+}
+.opcja3
+{
+    position: relative;
+    width: 75%;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    display: none;
+}
+
+.home4bt
+{
+
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #0e6edc;
+    color: #0e6edc;
+    font-size: 25px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.home4bt:hover 
+{
+    background-color: #0e6edc;
+    color: white;
+}
+
+
+
+
+
+.home5
+{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.home5 p 
+{
+    font-size: 25px;
+}
+
+
+
+
+
+
+footer
+{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-color: #0e6edc;
+    padding-top: 30px;
+}
+.fmain
+{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.fmain p 
+{
+    font-size: 20px;
+}
+.fmain a 
+{
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+}
+.f1
+{
+    height: 80%;
+    width: 40%;
+    color: white;
+}
+.f2
+{
+    height: 80%;
+    width: 30%;
+}
+.f2 a
+{
+    color: rgb(196, 196, 196);
+}
+.f3
+{
+    height: 80%;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+.f3 a 
+{
+    color: rgb(196, 196, 196);
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.fmain2
+{
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+.fdeveloper
+{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+    border-top: 2px solid #3d82d1;
+    padding-top: 5px;
+}
+.fcopirate
+{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+    border-top: 2px solid #3d82d1;
+    padding-top: 5px;
+}
+
+
+
+#insta
+{
+    transition: all .55s ease;
+}
+#insta:hover 
+{
+    color: #da2e7d;
+}
+#fb
+{
+    transition: all .55s ease;
+}
+#fb:hover 
+{
+    color: #4167b2;
+}
+#wa
+{
+    transition: all .55s ease;
+}
+#wa:hover 
+{
+    color: #2bb741;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px)
+{
+   *
+   {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   
+   header
+   {
+    padding: 20px;
+   }
+
+   .nav 
+   {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0e6edc;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+   }
+   .nav-link a 
+   {
+    font-size: 20px;
+    font-weight: 100;
+   }
+   .nav li
+   {
+    margin: 16px 0;
+    overflow-y: hidden;
+   }
+   #li1
+   {
+    margin-top: 100px;
+   }
+   .nav.active 
+   {
+    right: 0;
+   }
+
+   .hamburger
+   {
+    display: block;
+   }
+   .hamburger.active .bar:nth-child(2)
+   {
+    opacity: 0;
+   }
+   .hamburger.active .bar:nth-child(1)
+   {
+    transform: translateY(8px) rotate(45deg);
+   }
+   .hamburger.active .bar:nth-child(3)
+   {
+    transform: translateY(-8px) rotate(-45deg);
+   }
+
+
+
+
+
+   .logo 
+   {
+    margin-top: -10px;
+   }
+
+   .home
+   {
+    width: 100%;
+   }
+   .hometext
+   {
+    margin-top: -10vh;
+    width: 90%;
+   }
+   .home h1
+   {
+    font-size: 40px;
+   }
+   .home p 
+   {
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+   }
+   .home1bt
+   {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+   }
+
+
+   .home2
+   {
+    width: 100%;
+    height: 110vh;
+    overflow-y: hidden;
+   }
+   .home2 h2
+   {
+    font-size: 30px;
+   }
+   .home2img 
+   {
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+   }
+   .services1
+   {
+    padding: 0;
+    overflow-y: hidden;
+    width: 100%;
+    height: 25vh;
+   }
+   .services1 span 
+   {
+    overflow-y: hidden;
+   }
+
+
+
+   .home3
+   {
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+   }
+   .home3content
+   {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+   .home3img
+   {
+    position: relative;
+    width: 90%;
+    height: 30%;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .home3text
+   {
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    height: 75%;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+   }
+   .home3text p
+   {
+    text-align: left;
+   }
+   
+
+
+
+   .home4
+   {
+    position: relative;
+    width: 100%;
+    height: 210vh;
+    margin-top: 0;
+    margin-top: 10vh;
+   }
+   .offer
+    {
+        position: relative;
+        width: 100%;
+        height: 11vh;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .offer h2  
+    {
+        width: 100%;
+        padding-top: 40px;
+        font-size: 40px;
+        color: black;
+        font-weight: 100;
+    }
+    .wybor
+    {
+        position: relative;
+        width: 90%;
+        height: 25vh;
+        background-color: #eff3fb;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .wybor1, .wybor2, .wybor3
+    {
+        position: relative;
+        width: 100%;
+        height: 6vh;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    #iconsbt
+    {
+        display: none;
+    }
+
+    .opcja1
+    {
+        position: relative;
+        width: 90%;
+        height: 150vh;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .opcja2, .opcja3
+    {
+        position: relative;
+        width: 90%;
+        height: 150vh;
+        border-radius: 10px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        justify-content: space-around;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .iconatlo
+    {
+        position: absolute;
+        width: 100vh;
+        height: 120vh;
+        text-align: center;
+        rotate: 45deg;
+        margin-left: -20vh;
+        opacity: 10%;
+    }
+    #iconatlo
+    {
+        font-size: 1000px;
+    }
+    .inf1
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30%;
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    .inf1 p
+    {
+        font-size: 20px;
+        overflow-y: hidden;
+    }
+    .inf1 span 
+    {
+        overflow-y: hidden;
+    }
+    #inf1border
+    {
+        border-top: 1px solid;
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source: linear-gradient(to left, white 0%, gray 50%, white 100%);
+    }
+    .home4bt
+    {
+        font-size: 20px;
+    }
+
+
+
+
+    .home5
+    {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        text-align: center;
+    }
+    .home5 p 
+    {
+        font-size: 20px;
+    }
+    .home5 button 
+    {
+        margin-top: 2vh;
+    }
+
+
+
+
+
+
+
+    footer 
+    {
+        width: 100%;
+        height: 70vh;
+    }
+    .fmain
+    {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .f1
+    {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        padding-left: 20px;
+    }
+    .f2
+    {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        left: 0;
+    }
+    .f3
+    {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        padding-left: 20px;
+    }
+    .f3 a 
+    {
+        width: 200px;
+    }
+    .fmain2
+    {
+        position: relative;
+        width: 100%;
+        height: 20%;
+    }
+    .fdeveloper
+    {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding-top: 15px;
+    }
+    .fcopirate
+    {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding-top: 15px;
+    }
+
+}
